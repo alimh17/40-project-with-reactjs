@@ -1,0 +1,77 @@
+.navbar {
+  background-color: #131921;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  color: #fff;
+}
+
+.logoContainer {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.storeFront {
+  color: #ff9f00;
+  margin: 0 10px;
+}
+
+.SearchContainer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchContainer input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+}
+
+.SearchContainer svg {
+  background-color: #ff9f00;
+  cursor: pointer;
+}
+
+.RightSection {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RightSection div {
+  display: flex;
+  flex-flow: column;
+  font-size: 9px;
+  margin: 0 12px;
+  gap: 2px;
+}
+
+.RightSection div:last-child {
+  flex-flow: row;
+}
+
+.RightSection div span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.RightSection div span:last-child {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.checkoutLink {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

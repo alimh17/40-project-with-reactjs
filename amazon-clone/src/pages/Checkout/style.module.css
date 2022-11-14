@@ -1,0 +1,21 @@
+.checkout {
+  display: flex;
+}
+
+.checkoutLeft {
+  padding: 1rem;
+  flex: 9;
+}
+
+.checkoutLeft > img {
+  width: 100%;
+}
+
+.checkoutTitle {
+  padding: 1rem 5px;
+}
+
+.checkoutRight {
+  padding: 1rem;
+  flex: 3;
+}
