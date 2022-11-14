@@ -32,3 +32,14 @@
   border-radius: 5px;
   width: 10rem;
 }
+
+@media screen and (max-width: 768px) {
+  .producInfo > p:first-child {
+    font-weight: 700;
+    color: gray;
+    font-size: 14px;
+  }
+  .producInfo > button {
+    margin: 5px 0;
+  }
+}

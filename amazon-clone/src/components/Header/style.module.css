@@ -75,3 +75,25 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .SearchContainer,
+  .RightSection,
+  .logoContainer {
+    width: 80%;
+  }
+
+  .SearchContainer {
+    padding: 5px;
+  }
+
+  .RightSection {
+    justify-content: space-around;
+    padding: 5px;
+  }
+}

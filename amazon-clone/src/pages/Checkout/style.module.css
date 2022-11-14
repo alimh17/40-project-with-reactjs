@@ -19,3 +19,17 @@
   padding: 1rem;
   flex: 3;
 }
+
+@media screen and (max-width: 768px) {
+  .checkout {
+    flex-flow: column-reverse;
+  }
+
+  .checkoutLeft > img {
+    height: 4rem;
+    object-fit: fill;
+  }
+  .checkoutTitle {
+    font-size: 18px;
+  }
+}
