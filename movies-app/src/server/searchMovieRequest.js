@@ -1,12 +1,12 @@
 import axios from "axios";
-import config from "../config/config.json";
-
-const { KEY } = config;
 
 export const searchMoviesRequest = async (search) => {
-  const res = await axios(`http://www.omdbapi.com/?s=${search}&${KEY}`, {
-    method: "GET",
-  });
+  const res = await axios(
+    `http://www.omdbapi.com/?s=${search}&apikey=2003048e`,
+    {
+      method: "GET",
+    }
+  );
 
   return res.data;
 };
