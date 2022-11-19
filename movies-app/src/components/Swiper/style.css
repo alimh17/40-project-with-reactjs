@@ -1,0 +1,14 @@
+.slide {
+  display: flex;
+  flex-flow: column;
+  margin: 1rem 0;
+  background-color: #ffffff18;
+  padding: 1rem;
+  border-radius: 8px;
+  height: 30rem !important;
+  backdrop-filter: blur(8px);
+}
+
+.slide img {
+  object-fit: contain;
+}
