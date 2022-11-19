@@ -5,6 +5,8 @@ export const searchMoviesRequest = async (search) => {
     `http://www.omdbapi.com/?s=${search}&apikey=2003048e`,
     {
       method: "GET",
+      Authorization: "apikey=2003048e",
+      "Content-Type": "application/json",
     }
   );
 

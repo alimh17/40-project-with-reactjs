@@ -31,6 +31,7 @@ module.exports = {
       {
         test: /\.(css|scss|sass)?$/,
         use: ["style-loader", "css-loader"],
+        include: path.relative(__dirname, "./public/style/style.css"),
       },
     ],
   },
