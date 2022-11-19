@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import Poster from "../public/images/not-found.png";
 import Header from "./components/Header";
 import Movies from "./components/Movies";
 import FavouriteMovies from "./components/FavouriteMovies";
@@ -16,7 +17,7 @@ const App = () => {
     if (search) {
       const data = await searchMoviesRequest(search);
       if (data.Response === "False") {
-        setMovies([{ Poster: "images/not-found.png", imdbID: 1 }]);
+        setMovies([{ Poster, imdbID: 1 }]);
       } else {
         setMovies(data.Search);
       }

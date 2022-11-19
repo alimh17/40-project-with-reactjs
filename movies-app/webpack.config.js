@@ -1,5 +1,6 @@
 const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
+const miniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const PORT = process.env.PORT | 3000;
 
@@ -19,8 +20,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg|jpeg|gif|mp3|)?$/,
+        test: /\.(png|jpg|jpeg)?$/,
         loader: "file-loader",
+        options: {
+          type: "asset/resource",
+        },
       },
 
       {
@@ -30,8 +34,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss|sass)?$/,
-        use: ["style-loader", "css-loader"],
-        include: path.relative(__dirname, "./public/style/style.css"),
+        use: [miniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
@@ -39,5 +42,6 @@ module.exports = {
     new htmlWebpackPlugin({
       template: path.join(__dirname, "/public/index.html"),
     }),
+    new miniCssExtractPlugin(),
   ],
 };

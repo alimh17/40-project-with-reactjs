@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 
+import "../public/style/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/scss/navigation";
 import "swiper/css";
